@@ -1,10 +1,6 @@
-from flask import Flask
+num =10
+factorial = 1
+for i in range (1, num +1):
+    factorial *=i
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Hello from Docker CI/CD Pipeline!"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+print ("Factorial of", num, "is :", factorial)
